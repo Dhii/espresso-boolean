@@ -1,2 +1,3 @@
-# espresso-boolean
-Boolean expressions bundle for Espresso.
+# espresso-logical
+
+Logical expressions bundle for Espresso.
