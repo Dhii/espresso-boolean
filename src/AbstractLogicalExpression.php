@@ -2,6 +2,8 @@
 
 namespace Dhii\Espresso;
 
+use \Dhii\Data\ValueAwareInterface;
+
 /**
  * An abstract implementation of a logical expression.
  *
