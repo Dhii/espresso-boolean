@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c8f94094bbc23a29594bee9d28a540a9",
-    "content-hash": "d21262afe02fea8f2b7debd0c55a10ab",
+    "hash": "2f80d562e131fe344157fa0a232c54df",
+    "content-hash": "4dca55f19ffea5c2f3dff4a1184b54a9",
     "packages": [
         {
             "name": "dhii/data-key-value-aware-interface",
@@ -55,12 +55,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/espresso.git",
-                "reference": "b9f0310c56f3bacf2c6e64ce481c4996f838ffe2"
+                "reference": "2d85ad38882a29dcf7d46698bda0291be4ef37af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/espresso/zipball/b9f0310c56f3bacf2c6e64ce481c4996f838ffe2",
-                "reference": "b9f0310c56f3bacf2c6e64ce481c4996f838ffe2",
+                "url": "https://api.github.com/repos/Dhii/espresso/zipball/2d85ad38882a29dcf7d46698bda0291be4ef37af",
+                "reference": "2d85ad38882a29dcf7d46698bda0291be4ef37af",
                 "shasum": ""
             },
             "require": {
@@ -92,7 +92,7 @@
                 "source": "https://github.com/Dhii/espresso/tree/master",
                 "issues": "https://github.com/Dhii/espresso/issues"
             },
-            "time": "2017-01-02 19:44:26"
+            "time": "2017-01-06 16:46:36"
         },
         {
             "name": "dhii/espresso-abstract",
@@ -100,12 +100,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/espresso-abstract.git",
-                "reference": "a3571d90f0c0e978bbc1bfb69d20680cd05cea2b"
+                "reference": "847f814a35f135aec9635649e268a3851fdc3935"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/espresso-abstract/zipball/a3571d90f0c0e978bbc1bfb69d20680cd05cea2b",
-                "reference": "a3571d90f0c0e978bbc1bfb69d20680cd05cea2b",
+                "url": "https://api.github.com/repos/Dhii/espresso-abstract/zipball/847f814a35f135aec9635649e268a3851fdc3935",
+                "reference": "847f814a35f135aec9635649e268a3851fdc3935",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
                 "source": "https://github.com/Dhii/espresso-abstract/tree/master",
                 "issues": "https://github.com/Dhii/espresso-abstract/issues"
             },
-            "time": "2017-01-02 18:53:53"
+            "time": "2017-01-03 18:48:16"
         },
         {
             "name": "dhii/espresso-interface",
@@ -145,12 +145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/espresso-interface.git",
-                "reference": "a6f8a68c517378d1dfa72742d3a766e51902e8c7"
+                "reference": "beb55caa7880e67faff35e2dde24648fa58151a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/espresso-interface/zipball/a6f8a68c517378d1dfa72742d3a766e51902e8c7",
-                "reference": "a6f8a68c517378d1dfa72742d3a766e51902e8c7",
+                "url": "https://api.github.com/repos/Dhii/espresso-interface/zipball/beb55caa7880e67faff35e2dde24648fa58151a0",
+                "reference": "beb55caa7880e67faff35e2dde24648fa58151a0",
                 "shasum": ""
             },
             "require": {
@@ -182,7 +182,7 @@
                 "source": "https://github.com/Dhii/espresso-interface/tree/master",
                 "issues": "https://github.com/Dhii/espresso-interface/issues"
             },
-            "time": "2017-01-02 18:46:15"
+            "time": "2017-01-03 17:47:26"
         },
         {
             "name": "dhii/evaluable-interface",
@@ -1757,12 +1757,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "fe535f768b0f1f12480ba9b13f7ebbaec64444a8"
+                "reference": "dbe61fed9cd4a44c5b1d14e5e7b1a8640cfb2bf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/fe535f768b0f1f12480ba9b13f7ebbaec64444a8",
-                "reference": "fe535f768b0f1f12480ba9b13f7ebbaec64444a8",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/dbe61fed9cd4a44c5b1d14e5e7b1a8640cfb2bf2",
+                "reference": "dbe61fed9cd4a44c5b1d14e5e7b1a8640cfb2bf2",
                 "shasum": ""
             },
             "require": {
@@ -1798,7 +1798,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-02 20:30:24"
+            "time": "2017-01-03 13:49:52"
         }
     ],
     "aliases": [],
