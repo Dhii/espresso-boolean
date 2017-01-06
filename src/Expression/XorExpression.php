@@ -29,7 +29,7 @@ class XorExpression extends \Dhii\Espresso\AbstractLogicalExpression
      *
      * @since [*next-version*]
      */
-    public function _evaluate($left, $right)
+    public function _compare($left, $right)
     {
         return ($left xor $right);
     }

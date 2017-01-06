@@ -30,7 +30,7 @@ class AndExpression extends AbstractLogicalExpression
      *
      * @since [*next-version*]
      */
-    public function _evaluate($left, $right)
+    public function _compare($left, $right)
     {
         return $left && $right;
     }

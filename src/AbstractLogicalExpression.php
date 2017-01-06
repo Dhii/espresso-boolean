@@ -64,14 +64,14 @@ abstract class AbstractLogicalExpression extends AbstractGenericExpression imple
             $leftOperand = $result;
             $rightOperand = $this->_boolCast($terms[$i]->evaluate($ctx));
             // Evaluate using previous result and next term
-            $result = $this->_evaluate($leftOperand, $rightOperand);
+            $result = $this->_compare($leftOperand, $rightOperand);
         }
 
         return $result;
     }
 
     /**
-     * Evaluates the logical expression given the two operands.
+     * Compares two operands to evaluate the logical expression.
      *
      * @since [*next-version*]
      *
@@ -80,7 +80,7 @@ abstract class AbstractLogicalExpression extends AbstractGenericExpression imple
      *
      * @return bool The result.
      */
-    abstract protected function _evaluate($left, $right);
+    abstract protected function _compare($left, $right);
 
     /**
      * Explicitly casts a value into a boolean.
