@@ -11,7 +11,6 @@ use Dhii\Data\ValueAwareInterface;
  */
 abstract class AbstractLogicalExpression extends AbstractOperatorExpression implements LogicalExpressionInterface
 {
-
     /**
      * Evaluates to false if expression has no terms.
      *
