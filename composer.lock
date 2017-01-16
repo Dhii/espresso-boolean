@@ -100,12 +100,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/espresso-abstract.git",
-                "reference": "847f814a35f135aec9635649e268a3851fdc3935"
+                "reference": "e75bfc0ac62b4861b4a2f107a6f69243e38c88ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/espresso-abstract/zipball/847f814a35f135aec9635649e268a3851fdc3935",
-                "reference": "847f814a35f135aec9635649e268a3851fdc3935",
+                "url": "https://api.github.com/repos/Dhii/espresso-abstract/zipball/e75bfc0ac62b4861b4a2f107a6f69243e38c88ae",
+                "reference": "e75bfc0ac62b4861b4a2f107a6f69243e38c88ae",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
                 "source": "https://github.com/Dhii/espresso-abstract/tree/master",
                 "issues": "https://github.com/Dhii/espresso-abstract/issues"
             },
-            "time": "2017-01-03 18:48:16"
+            "time": "2017-01-16 14:29:09"
         },
         {
             "name": "dhii/espresso-interface",
@@ -1324,12 +1324,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "5cd0c7459b75b7df41d67f92916490f195a7a339"
+                "reference": "2e18b8903d9c498ba02e1dfa73f64d4894bb6912"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/5cd0c7459b75b7df41d67f92916490f195a7a339",
-                "reference": "5cd0c7459b75b7df41d67f92916490f195a7a339",
+                "url": "https://api.github.com/repos/symfony/console/zipball/2e18b8903d9c498ba02e1dfa73f64d4894bb6912",
+                "reference": "2e18b8903d9c498ba02e1dfa73f64d4894bb6912",
                 "shasum": ""
             },
             "require": {
@@ -1377,7 +1377,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-02 20:30:24"
+            "time": "2017-01-08 20:43:03"
         },
         {
             "name": "symfony/debug",
@@ -1502,12 +1502,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "2bcec948f46d00d11d9b9ac388c3ffc73cad4d71"
+                "reference": "5b77d49ab76e5b12743b359ef4b4a712e6f5360d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/2bcec948f46d00d11d9b9ac388c3ffc73cad4d71",
-                "reference": "2bcec948f46d00d11d9b9ac388c3ffc73cad4d71",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/5b77d49ab76e5b12743b359ef4b4a712e6f5360d",
+                "reference": "5b77d49ab76e5b12743b359ef4b4a712e6f5360d",
                 "shasum": ""
             },
             "require": {
@@ -1543,7 +1543,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-02 20:30:24"
+            "time": "2017-01-08 20:43:03"
         },
         {
             "name": "symfony/finder",
