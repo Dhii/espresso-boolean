@@ -58,6 +58,16 @@ abstract class AbstractLogicalExpression extends AbstractOperatorExpression impl
      *
      * @since [*next-version*]
      */
+    public function evaluate(ValueAwareInterface $ctx = null)
+    {
+        return $this->isNegated() xor parent::evaluate($ctx);
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @since [*next-version*]
+     */
     protected function _defaultValue(ValueAwareInterface $ctx = null)
     {
         return static::DEFAULT_VALUE;
