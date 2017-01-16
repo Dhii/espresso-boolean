@@ -158,4 +158,28 @@ class AndExpressionTest extends TestCase
 
         $this->assertFalse($subject->evaluate());
     }
+
+    /**
+     * Tests evaluation with two false terms and one true term.
+     *
+     * @since [*next-version*]
+     */
+    public function testEvaluateThreeTermsTwoFalse()
+    {
+        $subject = $this->createInstance(true, false, false);
+
+        $this->assertFalse($subject->evaluate());
+    }
+
+    /**
+     * Tests evaluation with three false terms.
+     *
+     * @since [*next-version*]
+     */
+    public function testEvaluateThreeTermsAllFalse()
+    {
+        $subject = $this->createInstance(false, false, false);
+
+        $this->assertFalse($subject->evaluate());
+    }
 }
