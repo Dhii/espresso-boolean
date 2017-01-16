@@ -2,14 +2,15 @@
 
 namespace Dhii\Espresso\Expression;
 
-use \Dhii\Espresso\AbstractLogicalExpression;
+use Dhii\Data\ValueAwareInterface;
+use Dhii\Espresso\AbstractGenericLogicalExpression;
 
 /**
  * A logical AND expression.
  *
  * @since [*next-version*]
  */
-class AndExpression extends AbstractLogicalExpression
+class AndExpression extends AbstractGenericLogicalExpression
 {
     /**
      * Constructor.
@@ -21,8 +22,7 @@ class AndExpression extends AbstractLogicalExpression
      */
     public function __construct(array $terms = array(), $negated = false)
     {
-        $this->setTerms($terms)
-            ->setNegated($negated);
+        $this->_init($terms, $negated);
     }
 
     /**
@@ -30,7 +30,7 @@ class AndExpression extends AbstractLogicalExpression
      *
      * @since [*next-version*]
      */
-    public function _compare($left, $right)
+    protected function _operator($left, $right, ValueAwareInterface $ctx = null)
     {
         return $left && $right;
     }
