@@ -2,14 +2,16 @@
 
 namespace Dhii\Espresso\Expression;
 
+use Dhii\Data\ValueAwareInterface;
+use Dhii\Espresso\AbstractGenericLogicalExpression;
+
 /**
  * A logical OR expression.
  *
  * @since [*next-version*]
  */
-class OrExpression extends \Dhii\Espresso\AbstractLogicalExpression
+class OrExpression extends AbstractGenericLogicalExpression
 {
-
     /**
      * Constructor.
      *
@@ -20,8 +22,7 @@ class OrExpression extends \Dhii\Espresso\AbstractLogicalExpression
      */
     public function __construct(array $terms = array(), $negated = false)
     {
-        $this->setTerms($terms)
-            ->setNegated($negated);
+        $this->_init($terms, $negated);
     }
 
     /**
@@ -29,9 +30,8 @@ class OrExpression extends \Dhii\Espresso\AbstractLogicalExpression
      *
      * @since [*next-version*]
      */
-    public function _compare($left, $right)
+    protected function _operator($left, $right, ValueAwareInterface $ctx = null)
     {
         return $left || $right;
     }
-
 }
