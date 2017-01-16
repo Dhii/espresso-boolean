@@ -2,9 +2,9 @@
 
 namespace Dhii\Espresso\Test\Expression;
 
-use \Dhii\Espresso\Expression\OrExpression;
-use \Dhii\Evaluable\EvaluableInterface;
-use \Xpmock\TestCase;
+use Dhii\Espresso\Expression\OrExpression;
+use Dhii\Evaluable\EvaluableInterface;
+use Xpmock\TestCase;
 
 /**
  * Tests {@see Dhii\Espresso\Expression\OrExpression}.
