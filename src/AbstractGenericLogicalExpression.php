@@ -20,7 +20,7 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
      * @param array $terms   [optional] An array of evaluable terms. Default: array()
      * @param bool  $negated [optional] True to negate the expression, false otherwise.
      */
-    public function init(array $terms = array(), $negated = false)
+    protected function _init(array $terms = array(), $negated = false)
     {
         $this->_setTerms($terms)
             ->_setNegated($negated);
