@@ -39,6 +39,22 @@ abstract class AbstractLogicalExpression extends AbstractOperatorExpression impl
     }
 
     /**
+     * Sets the expression's negation.
+     *
+     * @since [*next-version*]
+     *
+     * @param bool $negated True to negate the expression, false otherwise.
+     *
+     * @return $this This instance.
+     */
+    public function _setNegated($negated)
+    {
+        $this->negated = $negated;
+
+        return $this;
+    }
+
+    /**
      * {@inheritdoc}
      *
      * @since [*next-version*]
