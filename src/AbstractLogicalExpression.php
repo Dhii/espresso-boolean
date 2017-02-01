@@ -3,13 +3,14 @@
 namespace Dhii\Espresso;
 
 use Dhii\Data\ValueAwareInterface;
+use Dhii\Expression\AbstractLeftAssocOperatorExpression;
 
 /**
  * An abstract implementation of a logical expression.
  *
  * @since [*next-version*]
  */
-abstract class AbstractLogicalExpression extends AbstractOperatorExpression implements LogicalExpressionInterface
+abstract class AbstractLogicalExpression extends AbstractLeftAssocOperatorExpression
 {
     /**
      * Evaluates to false if expression has no terms.
@@ -62,7 +63,7 @@ abstract class AbstractLogicalExpression extends AbstractOperatorExpression impl
      */
     public function evaluate(ValueAwareInterface $ctx = null)
     {
-        return $this->isNegated() xor parent::evaluate($ctx);
+        return $this->isNegated() xor $this->_evaluate($ctx);
     }
 
     /**
