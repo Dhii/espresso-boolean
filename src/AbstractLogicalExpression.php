@@ -28,11 +28,13 @@ abstract class AbstractLogicalExpression extends AbstractOperatorExpression impl
     protected $negated;
 
     /**
-     * {@inheritdoc}
+     * Gets whether or not the expression is negated.
      *
      * @since [*next-version*]
+     *
+     * @return bool True if the expression is negated, false if not.
      */
-    public function isNegated()
+    protected function _isNegated()
     {
         return (bool) $this->negated;
     }
@@ -46,7 +48,7 @@ abstract class AbstractLogicalExpression extends AbstractOperatorExpression impl
      *
      * @return $this This instance.
      */
-    public function _setNegated($negated)
+    protected function _setNegated($negated)
     {
         $this->negated = $negated;
 
