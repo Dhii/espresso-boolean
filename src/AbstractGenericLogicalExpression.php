@@ -28,7 +28,19 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
         return $this;
     }
 
-    /*
+    /**
+     * Gets whether or not the expression is negated.
+     *
+     * @since [*next-version*]
+     *
+     * @return bool True if the expression is negated, false if not.
+     */
+    public function isNegated()
+    {
+        return $this->_isNegated();
+    }
+
+    /**
      * Sets the expression's negation.
      *
      * @since [*next-version*]
