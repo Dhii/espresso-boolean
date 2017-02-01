@@ -57,13 +57,17 @@ abstract class AbstractLogicalExpression extends AbstractLeftAssocOperatorExpres
     }
 
     /**
-     * {@inheritdoc}
+     * Evaluates the expression.
      *
      * @since [*next-version*]
+     *
+     * @param ValueAwareInterface $ctx [optional] The context. Default: null
+     *
+     * @return bool The result.
      */
-    public function evaluate(ValueAwareInterface $ctx = null)
+    protected function _evaluate(ValueAwareInterface $ctx = null)
     {
-        return $this->isNegated() xor $this->_evaluate($ctx);
+        return $this->_isNegated() xor parent::_evaluate($ctx);
     }
 
     /**
