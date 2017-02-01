@@ -123,4 +123,18 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
     {
         return $this->_setTerms($terms);
     }
+
+    /**
+     * Evaluates the expression.
+     *
+     * @since [*next-version*]
+     *
+     * @param ValueAwareInterface $ctx [optional] The context. Default: null
+     *
+     * @return bool The result.
+     */
+    public function evaluate(\Dhii\Data\ValueAwareInterface $ctx = null)
+    {
+        return $this->_evaluate($ctx);
+    }
 }
