@@ -57,6 +57,18 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
     }
 
     /**
+     * Gets the expression terms.
+     *
+     * @since [*next-version*]
+     *
+     * @return EvaluableInterface[] An array of evaluable instances.
+     */
+    public function getTerms()
+    {
+        return $this->_getTerms();
+    }
+
+    /**
      * Adds a term to the expression.
      *
      * @since [*next-version*]
