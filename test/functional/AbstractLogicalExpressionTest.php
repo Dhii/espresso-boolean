@@ -34,9 +34,7 @@ class AbstractLogicalExpressionTest extends TestCase
             ->_operator(function ($left, $right) {
                 return $left && $right;
             })
-            ->_eval(function () use ($evaluation) {
-                return $evaluation;
-            })
+            ->_eval($evaluation)
             ->new();
 
         return $mock;
