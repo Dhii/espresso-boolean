@@ -2,6 +2,7 @@
 
 namespace Dhii\Espresso;
 
+use Dhii\Data\ValueAwareInterface;
 use Dhii\Evaluable\EvaluableInterface;
 
 /**
@@ -135,7 +136,7 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
      *
      * @return bool The result.
      */
-    public function evaluate(\Dhii\Data\ValueAwareInterface $ctx = null)
+    public function evaluate(ValueAwareInterface $ctx = null)
     {
         return $this->_evaluate($ctx);
     }
