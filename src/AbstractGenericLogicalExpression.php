@@ -13,12 +13,14 @@ use Dhii\Evaluable\EvaluableInterface;
 abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpression
 {
     /**
-     * Constructor.
+     * Initializes the expression.
      *
      * @since [*next-version*]
      *
      * @param array $terms   [optional] An array of evaluable terms. Default: array()
      * @param bool  $negated [optional] True to negate the expression, false otherwise.
+     *
+     * @return $this This instance.
      */
     protected function _init(array $terms = array(), $negated = false)
     {
