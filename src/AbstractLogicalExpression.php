@@ -7,21 +7,21 @@ use Dhii\Data\ValueAwareInterface;
 /**
  * An abstract implementation of a logical expression.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 abstract class AbstractLogicalExpression extends AbstractOperatorExpression implements LogicalExpressionInterface
 {
     /**
      * Evaluates to false if expression has no terms.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     const DEFAULT_VALUE = false;
 
     /**
      * The negation flag.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @var bool
      */
@@ -30,7 +30,7 @@ abstract class AbstractLogicalExpression extends AbstractOperatorExpression impl
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function isNegated()
     {
@@ -40,7 +40,7 @@ abstract class AbstractLogicalExpression extends AbstractOperatorExpression impl
     /**
      * Sets the expression's negation.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param bool $negated True to negate the expression, false otherwise.
      *
@@ -56,7 +56,7 @@ abstract class AbstractLogicalExpression extends AbstractOperatorExpression impl
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function evaluate(ValueAwareInterface $ctx = null)
     {
@@ -66,7 +66,7 @@ abstract class AbstractLogicalExpression extends AbstractOperatorExpression impl
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     protected function _defaultValue(ValueAwareInterface $ctx = null)
     {

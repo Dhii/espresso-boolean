@@ -8,14 +8,14 @@ use Dhii\Espresso\AbstractGenericLogicalExpression;
 /**
  * A logical XOR expression.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class XorExpression extends AbstractGenericLogicalExpression
 {
     /**
      * Constructor.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param array $terms   [optional] An array of evaluable terms. Default: array()
      * @param bool  $negated [optional] True to negate the expression, false otherwise.
@@ -28,7 +28,7 @@ class XorExpression extends AbstractGenericLogicalExpression
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     protected function _operator($left, $right, ValueAwareInterface $ctx = null)
     {
