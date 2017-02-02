@@ -2,6 +2,7 @@
 
 namespace Dhii\Espresso;
 
+use Dhii\Data\ValueAwareInterface;
 use Dhii\Evaluable\EvaluableInterface;
 
 /**
@@ -13,12 +14,14 @@ use Dhii\Evaluable\EvaluableInterface;
 abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpression
 {
     /**
-     * Constructor.
+     * Initializes the expression.
      *
      * @since 0.1
      *
      * @param array $terms   [optional] An array of evaluable terms. Default: array()
      * @param bool  $negated [optional] True to negate the expression, false otherwise.
+     *
+     * @return $this This instance.
      */
     protected function _init(array $terms = array(), $negated = false)
     {
@@ -28,7 +31,19 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
         return $this;
     }
 
-    /*
+    /**
+     * Gets whether or not the expression is negated.
+     *
+     * @since [*next-version*]
+     *
+     * @return bool True if the expression is negated, false if not.
+     */
+    public function isNegated()
+    {
+        return $this->_isNegated();
+    }
+
+    /**
      * Sets the expression's negation.
      *
      * @since 0.1
@@ -42,6 +57,18 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
         $this->_setNegated($negated);
 
         return $this;
+    }
+
+    /**
+     * Gets the expression terms.
+     *
+     * @since [*next-version*]
+     *
+     * @return EvaluableInterface[] An array of evaluable instances.
+     */
+    public function getTerms()
+    {
+        return $this->_getTerms();
     }
 
     /**
@@ -98,5 +125,19 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
     public function setTerms(array $terms)
     {
         return $this->_setTerms($terms);
+    }
+
+    /**
+     * Evaluates the expression.
+     *
+     * @since [*next-version*]
+     *
+     * @param ValueAwareInterface $ctx [optional] The context. Default: null
+     *
+     * @return bool The result.
+     */
+    public function evaluate(ValueAwareInterface $ctx = null)
+    {
+        return $this->_evaluate($ctx);
     }
 }

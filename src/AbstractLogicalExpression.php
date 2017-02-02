@@ -3,13 +3,14 @@
 namespace Dhii\Espresso;
 
 use Dhii\Data\ValueAwareInterface;
+use Dhii\Expression\AbstractLeftAssocOperatorExpression;
 
 /**
  * An abstract implementation of a logical expression.
  *
  * @since 0.1
  */
-abstract class AbstractLogicalExpression extends AbstractOperatorExpression implements LogicalExpressionInterface
+abstract class AbstractLogicalExpression extends AbstractLeftAssocOperatorExpression
 {
     /**
      * Evaluates to false if expression has no terms.
@@ -28,11 +29,13 @@ abstract class AbstractLogicalExpression extends AbstractOperatorExpression impl
     protected $negated;
 
     /**
-     * {@inheritdoc}
+     * Gets whether or not the expression is negated.
      *
      * @since 0.1
+     *
+     * @return bool True if the expression is negated, false if not.
      */
-    public function isNegated()
+    protected function _isNegated()
     {
         return (bool) $this->negated;
     }
@@ -46,7 +49,7 @@ abstract class AbstractLogicalExpression extends AbstractOperatorExpression impl
      *
      * @return $this This instance.
      */
-    public function _setNegated($negated)
+    protected function _setNegated($negated)
     {
         $this->negated = $negated;
 
@@ -54,13 +57,17 @@ abstract class AbstractLogicalExpression extends AbstractOperatorExpression impl
     }
 
     /**
-     * {@inheritdoc}
+     * Evaluates the expression.
      *
      * @since 0.1
+     *
+     * @param ValueAwareInterface $ctx [optional] The context. Default: null
+     *
+     * @return bool The result.
      */
-    public function evaluate(ValueAwareInterface $ctx = null)
+    protected function _evaluate(ValueAwareInterface $ctx = null)
     {
-        return $this->isNegated() xor parent::evaluate($ctx);
+        return $this->_isNegated() xor parent::_evaluate($ctx);
     }
 
     /**

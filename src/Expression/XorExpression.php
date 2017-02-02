@@ -4,13 +4,14 @@ namespace Dhii\Espresso\Expression;
 
 use Dhii\Data\ValueAwareInterface;
 use Dhii\Espresso\AbstractGenericLogicalExpression;
+use Dhii\Expression\LogicalExpressionInterface;
 
 /**
  * A logical XOR expression.
  *
  * @since 0.1
  */
-class XorExpression extends AbstractGenericLogicalExpression
+class XorExpression extends AbstractGenericLogicalExpression implements LogicalExpressionInterface
 {
     /**
      * Constructor.

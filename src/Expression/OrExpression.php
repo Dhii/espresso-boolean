@@ -4,13 +4,14 @@ namespace Dhii\Espresso\Expression;
 
 use Dhii\Data\ValueAwareInterface;
 use Dhii\Espresso\AbstractGenericLogicalExpression;
+use Dhii\Expression\LogicalExpressionInterface;
 
 /**
  * A logical OR expression.
  *
  * @since 0.1
  */
-class OrExpression extends AbstractGenericLogicalExpression
+class OrExpression extends AbstractGenericLogicalExpression implements LogicalExpressionInterface
 {
     /**
      * Constructor.

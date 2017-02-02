@@ -4,13 +4,14 @@ namespace Dhii\Espresso\Expression;
 
 use Dhii\Data\ValueAwareInterface;
 use Dhii\Espresso\AbstractGenericLogicalExpression;
+use Dhii\Expression\LogicalExpressionInterface;
 
 /**
  * A logical AND expression.
  *
  * @since 0.1
  */
-class AndExpression extends AbstractGenericLogicalExpression
+class AndExpression extends AbstractGenericLogicalExpression implements LogicalExpressionInterface
 {
     /**
      * Constructor.
