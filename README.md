@@ -15,14 +15,14 @@ A package for [Espresso][] that adds logical expressions for representing and ev
 composer require dhii/espresso-logical
 ```
 
-The packages adheres to the SemVer specification, and there will be full backward compatibility between minor versions.
+The packages adheres to the [SemVer][] specification, and there will be full backward compatibility between minor versions.
 
 Additionally, it follows the rule of the [caret operator][], i.e. there will be full backward compatibility between
 patch pre-release versions.
 
 ## Usage
 
-The following is an example that demonstrates usage of the `AndExpression` class.
+The following is an example that demonstrates usage of the [`AndExpression`][] class.
 
 ```php
 $expr = new Expression\AndExpression(array(
@@ -42,4 +42,6 @@ $expr->evaluate($ctx); // true
 ```
 
 [Espresso]:         https://github.com/Dhii/espresso
+[SemVer]:           http://semver.org/
 [caret operator]:   https://getcomposer.org/doc/articles/versions.md#caret
+[`AndExpression`]:  https://github.com/Dhii/espresso-logical/blob/master/src/Expression/AndExpression.php
