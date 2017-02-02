@@ -22,6 +22,8 @@ class AbstractLogicalExpressionTest extends TestCase
     /**
      * Creates a new instance of the test subject.
      *
+     * @since [*next-version*]
+     *
      * @param mixed $evaluation The evaluation result.
      *
      * @return AbstractLogicalExpression The created instance.
