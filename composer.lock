@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2f80d562e131fe344157fa0a232c54df",
-    "content-hash": "4dca55f19ffea5c2f3dff4a1184b54a9",
+    "hash": "a44a10ba1402b26c0f646e89995dc2ec",
+    "content-hash": "91848c697cc115842430f0f8f7cee5c8",
     "packages": [
         {
             "name": "dhii/data-key-value-aware-interface",
@@ -54,16 +54,16 @@
         },
         {
             "name": "dhii/espresso",
-            "version": "dev-master",
+            "version": "dev-release/0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/espresso.git",
-                "reference": "8e1c1488a398997b1148690604465898612b47e6"
+                "reference": "fdadbc5277c6c1202609e04295274dae87e5d846"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/espresso/zipball/8e1c1488a398997b1148690604465898612b47e6",
-                "reference": "8e1c1488a398997b1148690604465898612b47e6",
+                "url": "https://api.github.com/repos/Dhii/espresso/zipball/fdadbc5277c6c1202609e04295274dae87e5d846",
+                "reference": "fdadbc5277c6c1202609e04295274dae87e5d846",
                 "shasum": ""
             },
             "require": {
@@ -92,10 +92,10 @@
             ],
             "description": "A PHP expression builder and evaluation library.",
             "support": {
-                "source": "https://github.com/Dhii/espresso/tree/master",
+                "source": "https://github.com/Dhii/espresso/tree/release/0.1",
                 "issues": "https://github.com/Dhii/espresso/issues"
             },
-            "time": "2017-01-31 14:30:12"
+            "time": "2017-01-31 14:48:47"
         },
         {
             "name": "dhii/evaluable-interface",
@@ -750,12 +750,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "95f30cd26abebb91ea4e762f040fc4bf711b81e2"
+                "reference": "791b1a67c25af50e230f841ee7a9c6eba507dc87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/95f30cd26abebb91ea4e762f040fc4bf711b81e2",
-                "reference": "95f30cd26abebb91ea4e762f040fc4bf711b81e2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/791b1a67c25af50e230f841ee7a9c6eba507dc87",
+                "reference": "791b1a67c25af50e230f841ee7a9c6eba507dc87",
                 "shasum": ""
             },
             "require": {
@@ -814,7 +814,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-02-02 11:33:20"
+            "time": "2017-02-06 05:18:07"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1330,12 +1330,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "783e23a50ac464d9eb82cc7ea35ef260da8ba6bb"
+                "reference": "f3c234cd8db9f7e520a91d695db7d8bb5daeb7a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/783e23a50ac464d9eb82cc7ea35ef260da8ba6bb",
-                "reference": "783e23a50ac464d9eb82cc7ea35ef260da8ba6bb",
+                "url": "https://api.github.com/repos/symfony/console/zipball/f3c234cd8db9f7e520a91d695db7d8bb5daeb7a4",
+                "reference": "f3c234cd8db9f7e520a91d695db7d8bb5daeb7a4",
                 "shasum": ""
             },
             "require": {
@@ -1383,7 +1383,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-31 21:48:58"
+            "time": "2017-02-06 12:04:06"
         },
         {
             "name": "symfony/debug",
@@ -1665,12 +1665,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "699fe81c8a158753be1be3da4768a2ab69a52aa6"
+                "reference": "0110ac49348d14eced7d3278ea7485f22196932e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/699fe81c8a158753be1be3da4768a2ab69a52aa6",
-                "reference": "699fe81c8a158753be1be3da4768a2ab69a52aa6",
+                "url": "https://api.github.com/repos/symfony/process/zipball/0110ac49348d14eced7d3278ea7485f22196932e",
+                "reference": "0110ac49348d14eced7d3278ea7485f22196932e",
                 "shasum": ""
             },
             "require": {
@@ -1706,7 +1706,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-21 16:40:50"
+            "time": "2017-02-03 12:08:06"
         },
         {
             "name": "symfony/stopwatch",
