@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Espresso;
+namespace Dhii\Espresso\Expression;
 
 use Dhii\Data\ValueAwareInterface;
 use Dhii\Evaluable\EvaluableInterface;

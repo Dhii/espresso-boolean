@@ -1,9 +1,9 @@
 <?php
 
-namespace Dhii\Espresso;
+namespace Dhii\Espresso\Expression;
 
 use Dhii\Data\ValueAwareInterface;
-use Dhii\Expression\AbstractLeftAssocOperatorExpression;
+use Dhii\Expression\Expression\AbstractLeftAssocOperatorExpression;
 
 /**
  * An abstract implementation of a logical expression.

@@ -3,7 +3,6 @@
 namespace Dhii\Espresso\Expression;
 
 use Dhii\Data\ValueAwareInterface;
-use Dhii\Espresso\AbstractGenericLogicalExpression;
 use Dhii\Expression\LogicalExpressionInterface;
 
 /**
