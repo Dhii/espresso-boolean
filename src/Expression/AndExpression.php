@@ -3,20 +3,19 @@
 namespace Dhii\Espresso\Expression;
 
 use Dhii\Data\ValueAwareInterface;
-use Dhii\Espresso\AbstractGenericLogicalExpression;
 use Dhii\Expression\LogicalExpressionInterface;
 
 /**
  * A logical AND expression.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class AndExpression extends AbstractGenericLogicalExpression implements LogicalExpressionInterface
 {
     /**
      * Constructor.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param array $terms   [optional] An array of evaluable terms. Default: array()
      * @param bool  $negated [optional] True to negate the expression, false otherwise.
@@ -29,7 +28,7 @@ class AndExpression extends AbstractGenericLogicalExpression implements LogicalE
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     protected function _operator($left, $right, ValueAwareInterface $ctx = null)
     {

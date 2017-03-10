@@ -1,28 +1,28 @@
 <?php
 
-namespace Dhii\Espresso;
+namespace Dhii\Espresso\Expression;
 
 use Dhii\Data\ValueAwareInterface;
-use Dhii\Expression\AbstractLeftAssocOperatorExpression;
+use Dhii\Expression\Expression\AbstractLeftAssocOperatorExpression;
 
 /**
  * An abstract implementation of a logical expression.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 abstract class AbstractLogicalExpression extends AbstractLeftAssocOperatorExpression
 {
     /**
      * Evaluates to false if expression has no terms.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     const DEFAULT_VALUE = false;
 
     /**
      * The negation flag.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @var bool
      */
@@ -31,7 +31,7 @@ abstract class AbstractLogicalExpression extends AbstractLeftAssocOperatorExpres
     /**
      * Gets whether or not the expression is negated.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return bool True if the expression is negated, false if not.
      */
@@ -43,7 +43,7 @@ abstract class AbstractLogicalExpression extends AbstractLeftAssocOperatorExpres
     /**
      * Sets the expression's negation.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param bool $negated True to negate the expression, false otherwise.
      *
@@ -59,7 +59,7 @@ abstract class AbstractLogicalExpression extends AbstractLeftAssocOperatorExpres
     /**
      * Evaluates the expression.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param ValueAwareInterface $ctx [optional] The context. Default: null
      *
@@ -73,7 +73,7 @@ abstract class AbstractLogicalExpression extends AbstractLeftAssocOperatorExpres
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     protected function _defaultValue(ValueAwareInterface $ctx = null)
     {

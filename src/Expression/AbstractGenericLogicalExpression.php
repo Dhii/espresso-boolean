@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Espresso;
+namespace Dhii\Espresso\Expression;
 
 use Dhii\Data\ValueAwareInterface;
 use Dhii\Evaluable\EvaluableInterface;
@@ -9,14 +9,14 @@ use Dhii\Evaluable\EvaluableInterface;
  * An abstract logical expression implementation that exposes public methods for term
  * management, similar to {@see Dhii\Espresso\AbstractGenericExpression}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpression
 {
     /**
      * Initializes the expression.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param array $terms   [optional] An array of evaluable terms. Default: array()
      * @param bool  $negated [optional] True to negate the expression, false otherwise.
@@ -46,7 +46,7 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
     /**
      * Sets the expression's negation.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param bool $negated True to negate the expression, false otherwise.
      *
@@ -74,7 +74,7 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
     /**
      * Adds a term to the expression.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param EvaluableInterface $term The term instance.
      *
@@ -88,7 +88,7 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
     /**
      * Removes the term at a specific index from the expression.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param int $index The zero-based index of the term to remove.
      *
@@ -102,7 +102,7 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
     /**
      * Gets a term at a specific index from the expression.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param int $index The zero-based index of the term to retrieve.
      *
@@ -116,7 +116,7 @@ abstract class AbstractGenericLogicalExpression extends AbstractLogicalExpressio
     /**
      * Sets the expression terms.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param array $terms An array of EvaluableInterface instances.
      *

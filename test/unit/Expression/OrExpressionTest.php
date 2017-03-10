@@ -9,14 +9,14 @@ use Xpmock\TestCase;
 /**
  * Tests {@see Dhii\Espresso\Expression\OrExpression}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class OrExpressionTest extends TestCase
 {
     /**
      * Creates an instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return OrExpression
      */
@@ -37,7 +37,7 @@ class OrExpressionTest extends TestCase
     /**
      * Creates a mock evaluable term that evaluates to a given value.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param bool $val The value to be returned when the term is evaluated.
      *
@@ -54,7 +54,7 @@ class OrExpressionTest extends TestCase
     /**
      * Tests evaluation with no terms.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testEvaluateNoTerms()
     {
@@ -66,7 +66,7 @@ class OrExpressionTest extends TestCase
     /**
      * Tests evaluation with one true term.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testEvaluateOneTermTrue()
     {
@@ -78,7 +78,7 @@ class OrExpressionTest extends TestCase
     /**
      * Tests evaluation with one false term.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testEvaluateOneTermFalse()
     {
@@ -90,7 +90,7 @@ class OrExpressionTest extends TestCase
     /**
      * Tests evaluation with two true terms.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testEvaluateTwoTermsTrueTrue()
     {
@@ -102,7 +102,7 @@ class OrExpressionTest extends TestCase
     /**
      * Tests evaluation with one true term and one false terms.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testEvaluateTwoTermsTrueFalse()
     {
@@ -114,7 +114,7 @@ class OrExpressionTest extends TestCase
     /**
      * Tests evaluation with one false term and one true terms.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testEvaluateTwoTermsFalseTrue()
     {
@@ -126,7 +126,7 @@ class OrExpressionTest extends TestCase
     /**
      * Tests evaluation with two false terms.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testEvaluateTwoTermsFalseFalse()
     {
@@ -138,7 +138,7 @@ class OrExpressionTest extends TestCase
     /**
      * Tests evaluation with three true terms.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testEvaluateThreeTermsAllTrue()
     {
@@ -150,7 +150,7 @@ class OrExpressionTest extends TestCase
     /**
      * Tests evaluation with two true terms and one false term.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testEvaluateThreeTermsOneFalse()
     {
@@ -162,7 +162,7 @@ class OrExpressionTest extends TestCase
     /**
      * Tests evaluation with two false terms and one true term.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testEvaluateThreeTermsTwoFalse()
     {
@@ -174,7 +174,7 @@ class OrExpressionTest extends TestCase
     /**
      * Tests evaluation with three false terms.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testEvaluateThreeTermsAllFalse()
     {

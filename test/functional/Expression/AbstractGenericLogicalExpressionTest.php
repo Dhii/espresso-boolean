@@ -1,13 +1,13 @@
 <?php
 
-namespace Dhii\Espresso\FuncTest;
+namespace Dhii\Espresso\FuncTest\Expression;
 
-use Dhii\Espresso\AbstractGenericLogicalExpression;
+use Dhii\Espresso\Expression\AbstractGenericLogicalExpression;
 use Dhii\Evaluable\EvaluableInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see Dhii\Espresso\AbstractGenericLogicalExpression}.
+ * Tests {@see Dhii\Espresso\Expression\AbstractGenericLogicalExpression}.
  *
  * @since [*next-version*]
  */
@@ -18,7 +18,7 @@ class AbstractGenericLogicalExpressionTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Espresso\\AbstractGenericLogicalExpression';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Espresso\\Expression\\AbstractGenericLogicalExpression';
 
     /**
      * The name of the evaluable term interface.

@@ -1,12 +1,12 @@
 <?php
 
-namespace Dhii\Espresso\FuncTest;
+namespace Dhii\Espresso\FuncTest\Expression;
 
-use Dhii\Espresso\AbstractLogicalExpression;
+use Dhii\Espresso\Expression\AbstractLogicalExpression;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see Dhii\Espresso\AbstractLogicalExpression}.
+ * Tests {@see Dhii\Espresso\Expression\AbstractLogicalExpression}.
  *
  * @since [*next-version*]
  */
@@ -17,7 +17,7 @@ class AbstractLogicalExpressionTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Espresso\\AbstractLogicalExpression';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Espresso\\Expression\\AbstractLogicalExpression';
 
     /**
      * Creates a new instance of the test subject.
